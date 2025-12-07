@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  font-family: 'Poppins', sans-serif;
+}
+
+        #LG1{
+            background-color: red;
+            height:100px;
+            background-image: linear-gradient(to bottom,red,yellow);/*we can use  to top,to right,to left instead of to butttom*/
+        }
+        #LG2{
+            background-color: red;
+            height:100px;
+            background-image: linear-gradient(to left,red,yellow);}
+            #LG3{
+           
+            height:100px;
+            background-image: linear-gradient(to top,red,yellow,green);}
+            #LG4{
+                height:80px;
+                background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+            }
+            #LG5{
+                height:80px;
+                background-image: repeating-linear-gradient(90deg,red,yellow 7%,green 10%);/*change degree then see what will happen*/
+            }
+            #RG1{
+                height: 150px;
+                width:200px;
+                background-image: radial-gradient(red,yellow,green);
+            }
+            #RG2{
+                height: 150px;
+                width:200px;
+                background-image: radial-gradient(red 5%,yellow 15%, green 60%);
+            }
+            #RG3{
+                height:150px;
+                width:200px;
+                background-image: repeating-radial-gradient(red,yellow 10%,green 15%);
+            }
+            #CG1{
+                height:200px;
+                width:200px;
+                background-color: red;
+                background-image: conic-gradient(red,yellow, green);
+            }
+            #CG2{
+                height: 200px;
+                width:200px;
+                background-image: conic-gradient(red,yellow,green,blue,black);
+            }
+            #CG3{
+               height: 200px;
+                width:200px;
+                background-image: conic-gradient(red 45deg,yellow 90deg,green 120deg) 
+            }
+            .CG4{
+                height:200px;
+                width:200px;
+                background-image: conic-gradient(red,yellow,green,blue,black);
+                border-radius: 50%;
+            }
+            .CG5{
+               height:200px;
+                width:200px;
+                background-image: conic-gradient(red 0deg,red 90deg,yellow 90deg,yellow 180deg,green 180deg,green 270deg,blue 270deg); 
+           border-radius: 50%; }
+           #CG6{
+            height:200px;
+                width:200px;
+                background-image: repeating-conic-gradient(red 10%,yellow 20%);
+                border-radius: 50%;
+           }
+           #CG7{
+            height:200px;
+                width:200px;
+                background-image: repeating-conic-gradient(red 0deg 10deg,yellow 10deg 20deg,blue 20deg 30deg);
+                border-radius: 50%;
+           }
+    </style>
+</head>
+<body>
+    <h1>CSS Gradient </h1>
+    <h2>linear gradient</h2><p>background-image: linear-gradient(direction, color-stop1, color-stop2, ...);</p>
+     <h2>Linear Gradient - Top to Bottom</h2>
+<p>This linear gradient starts red at the top, transitioning to yellow at the bottom:</p>
+<div id="LG1"></div>
+<h2>rigth to left linear gradient</h2>
+<div id="LG2"></div>
+<h2>linear gradient with multiple color stops</h2>
+<div id="LG3"></div>
+<h2>linear gradient (from left to right) with the color of the rainbow and some text:</h2>
+    <div id="LG4" style="text-align: center;font-size: 40px;font-weight: bold;margin:auto">Rainbow background</div>
+<h2>reapiting linear gradient</h2>
+<div id="LG5"></div>
+<h1>Radial-gradient</h1>
+<h3>The CSS radial-gradient() function creates a radial gradient.
+
+A radial gradient defines a color transition that goes goes out from a central point.
+
+A radial gradient requires at least two color stops. Color stops are the colors you want to render smooth transitions among.</h3>
+
+<p><strong>syntax</strong>
+background-image: radial-gradient(shape size at position, start-color, ..., last-color);</p>
+<h2>Rg for evenly spaced colors</h2>
+<div id="RG1"></div>
+<h3>RG for differently spaced colors</h3>
+<div id="RG2"></div>
+<h2>repeating-radial-gradient</h2>
+<div id="RG3"></div>
+<h1>conic Gradient</h1>
+<div id="CG1"></div>
+<h2>Conic Gradient with five colors</h2>
+<div id="CG2"></div>
+<h2>conic-gradient with 3 colors and degree</h2>
+<div id="CG3"></div>
+<h2>Create a Pie Charts, just add a border radius</h2>
+<div class="CG4"></div>
+<h2> pie chart with degree</h2>
+<div class="CG5"></div>
+<h2>repeating-conic-gradient</h2>
+<div id="CG6"></div>
+<h2>color-starts and-stops</h2>
+<div id="CG7"></div>
+</body>
+</html>
